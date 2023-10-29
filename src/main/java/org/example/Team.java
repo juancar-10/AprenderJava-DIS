@@ -1,11 +1,12 @@
 package org.example;
 
 public class Team {
-    Member member;
+    Member member = new Member("Pepito", "dark", 11, 2);
 
     public  Team(){
-        Member myMember = new Member("Juan Carlos", "light", 10, 1);
-        Team myTeam = new Team(myMember);
+        //Member member1 = new Member("Juan Carlos", "light", 10, 1);
+        //Team myTeam = new Team(member1);
+        Team myTeam = new Team(member);
         System.out.println(myTeam.member.getName());
         System.out.println(myTeam.member.getType());
         System.out.println(myTeam.member.getLevel());
